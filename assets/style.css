@@ -147,7 +147,7 @@ div#alunos {
 			flex-direction: column;
 			justify-content: center;
 			gap: 1rem;
-			min-width: 33.2prem;
+			min-width: 33.2rem;
 			min-height: 10.8rem;
 		}
 			.card div p {
@@ -175,21 +175,14 @@ div#alunos {
 	#convercao h1 {
 		color: #383838;
 	}
-
-	#convercao button {
-		height: 56px;
-		width: 335px;
-		border-radius: 8px;
-		background: #247BA0;
-	}
 	
 	#convercao a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 56px;
-		width: 335px;
-		border-radius: 8px;
+		height: 5.6rem;
+		width: 33.5rem;
+		border-radius: 0.8rem;
 		background: #247BA0;
 
 		text-decoration: none;
