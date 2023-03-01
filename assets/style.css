@@ -20,6 +20,7 @@ header#cabecalho {
 	background-size: cover;
 	width: 100vw;
 	min-height: 56rem;
+	height: fit-content;
 	color: #FFFFFF;
 }
 
@@ -36,6 +37,7 @@ header#cabecalho {
 	#div2 {
 		margin-left: 15%;
 		max-width: 40%;
+		padding-bottom: 5%;
 	}
 
 	header#cabecalho h1 {
@@ -70,7 +72,8 @@ header#cabecalho {
 	}
 	
 	.infoChild img {
-		height: 100%;
+		height: 4rem;
+		width: 4rem;
 		margin: 0 1rem 0 1rem;
 	}
 
@@ -83,7 +86,7 @@ header#cabecalho {
 		color: #122235;
 	}
 
-div#learn {
+#learn {
 	padding: 8rem 15% 8rem 15%;
 	display: flex;
 	flex-direction: row;
@@ -91,7 +94,7 @@ div#learn {
 }
 
 	.learnChild {
-		width: 50%;
+		max-width: 50%;
 	}
 		.learnChild h1 {
 			color: #247BA0;
@@ -108,16 +111,18 @@ div#learn {
 		cursor: pointer;
 	}
 
-div#alunos {
+#alunos {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	min-height: 44.4rem;
 	background: #247BA0;
+	background-size: cover;
 	padding: 8rem 15% 8rem 15%;
 	gap: 6rem;
 }
 	#alunos h1 {
+		text-align: center;
 		color: #EAECE5;
 		text-align: center;
 	}
@@ -133,8 +138,8 @@ div#alunos {
 		align-items: center;
 		padding: 3.2rem 3.5rem;
 		gap: 2.4rem;
-		width: 53.2rem;
-		height: 13rem;
+		max-width: 53.2rem;
+		min-height: 13rem;
 		background: #FFFFFF;
 		border-radius: 1.6rem;
 	}
@@ -147,8 +152,8 @@ div#alunos {
 			flex-direction: column;
 			justify-content: center;
 			gap: 1rem;
-			min-width: 33.2prem;
-			min-height: 10.8rem;
+			width: 70%;
+			height: 10.8rem;
 		}
 			.card div p {
 				font-weight: 400;
@@ -174,22 +179,16 @@ div#alunos {
 }
 	#convercao h1 {
 		color: #383838;
-	}
-
-	#convercao button {
-		height: 56px;
-		width: 335px;
-		border-radius: 8px;
-		background: #247BA0;
+		text-align: center;
 	}
 	
 	#convercao a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 56px;
-		width: 335px;
-		border-radius: 8px;
+		height: 5.6rem;
+		width: 33.5rem;
+		border-radius: 0.8rem;
 		background: #247BA0;
 
 		text-decoration: none;
@@ -203,3 +202,66 @@ div#alunos {
 	#convercao a:hover {
 		color: #CCCCCC;
 	}
+
+@media all and (max-width: 480px) {
+	html {
+		font-size: 40%;
+	}
+}
+
+@media all and (max-width: 720px) {
+	#div2 {
+		padding: 0 5% 5% 5%;
+		max-width: 90%;
+	}
+	#info {
+		flex-direction: column;
+		height: max-content;
+		padding: 5% 5% 5% 5%;
+	}
+	#learn {
+		padding: 8rem 5% 8rem 5%;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+		.learnChild {
+			max-width: 90%;
+		}
+		.learnChild h1 {
+			text-align: center;
+		}
+	#alunos {
+		padding: 8rem 5% 8rem 5%;
+		gap: 2rem;
+	}
+		#alunosChild {
+			flex-direction: column;
+		}
+			.card {
+				flex-direction: column;
+				padding: 5%;
+				max-width: 90%;
+			}
+	#convercao {
+		padding: 8rem 5% 8rem 5%;
+	}
+		#convercao h1 {
+			
+		}
+}
+
+@media all and ((max-width: 1279px) and (min-width: 720px)) {
+	#alunos {
+		padding: 8rem 15% 8rem 15%;
+		gap: 2rem;
+	}
+		#alunosChild {
+			flex-direction: column;
+		}
+			.card {
+				flex-direction: column;
+				padding: 5%;
+				max-width: 90%;
+			}
+}
